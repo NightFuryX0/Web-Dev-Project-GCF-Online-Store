@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <img src="logo.png" alt="Store Logo" class="logo">
+      <h1>Online Store</h1>
+    </div>
+    <div class="header-center">
+      <div class="dropdown">
+        <button class="dropbtn">Categories</button>
+        <div class="dropdown-content">
+          <a href="#">Clothing</a>
+          <a href="#">Electronics</a>
+          <a href="#">Toys</a>
+          <a href="#">Fitness</a>
+          <a href="#">Accessories</a>
+        </div>
+      </div>
+      <input type="text" class="search-bar" placeholder="Search for products...">
+    </div>
+    <div class="header-right">
+      <button class="cart-btn">🛒 Cart</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Product Grid -->
+    <section class="product-grid">
+      <div class="product">
+        <img src="laptop.png" alt="Product 1">
+        <h3>MacBook Air</h3>
+        <p>Highly efficient Silicon chip used which can boost through your entire day without any hiccups. Must buy product for those involved in productivity.</p>
+        <p class="price">INR 69900</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="tshirt.png" alt="Product 2">
+        <h3>T-Shirt</h3>
+        <p>A comfortable and stylish T-shirt made from soft, breathable fabric. Perfect for casual wear, it comes in various colors and sizes. Ideal for everyday use, sports, or lounging. Durable and easy to care for, it’s a must-have in your wardrobe.</p>
+        <p class="price">INR 399</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="watch.png" alt="Product 3">
+        <h3>Wrist Watch</h3>
+        <p>A sleek and elegant wristwatch with a stainless steel strap and scratch-resistant dial. Features precise quartz movement and water resistance. Perfect for both casual and formal occasions, it combines style and functionality.</p>
+        <p class="price">INR 4599</p>
+        <button>Add to Cart</button>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+      <h2>Categories</h2>
+      <div class="category-grid">
+        <div class="category-card">
+          <img src="clothlogo.jpg" alt="Clothing">
+          <h3>Clothing</h3>
+        </div>
+        <div class="category-card">
+          <img src="eleclogo.png" alt="Electronics">
+          <h3>Electronics</h3>
+        </div>
+        <div class="category-card">
+          <img src="nerf.jpg" alt="Toys">
+          <h3>Toys</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Products in List Format -->
+    <section class="additional-products">
+      <h2>More Products</h2>
+      <ul>
+        <li>
+          <img src="treadmill.png" alt="Product 4">
+          <div class="product-details">
+            <h3>Treadmill</h3>
+            <p>A high-quality treadmill designed for home workouts. Features adjustable speed, incline, and cushioned running surface for joint protection. Perfect for cardio, weight loss, or staying fit indoors. Compact and foldable, it’s ideal for small spaces.</p>
+            <p class="price">INR 9999</p>
+            <button>Add to Cart</button>
+          </div>
+        </li>
+        <li>
+          <img src="backpack.png" alt="Product 5">
+          <div class="product-details">
+            <h3>BackPack</h3>
+            <p>A versatile and durable backpack with multiple compartments for organization. Made from water-resistant material, it’s perfect for school, travel, or daily use. Comfortable padded straps and ergonomic design make it ideal for carrying essentials.</p>
+            <p class="price">INR 1999</p>
+            <button>Add to Cart</button>
+          </div>
+        </li>
+        <li>
+          <img src="bat.png" alt="Product 6">
+          <div class="product-details">
+            <h3>Cricket Bat</h3>
+            <p>A+ premium-grade cricket bat crafted from high-quality willow wood. Designed for power and precision, it’s perfect for professional and amateur players. Lightweight with excellent grip, it ensures maximum performance on the field.</p>
+            <p class="price">INR 6999</p>
+            <button>Add to Cart</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Checkout Section -->
+    <section class="checkout">
+      <h2>Checkout</h2>
+      <form class="checkout-form">
+        <!-- Shipping Information -->
+        <div class="form-section">
+          <h3>Shipping Information</h3>
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" required>
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required>
+          </div>
+          <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required>
+          </div>
+          <div class="form-group">
+            <label for="postal-code">Postal Code</label>
+            <input type="text" id="postal-code" name="postal-code" required>
+          </div>
+        </div>
+
+        <!-- Payment Information -->
+        <div class="form-section">
+          <h3>Payment Information</h3>
+          <div class="form-group">
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" name="card-number" required>
+          </div>
+          <div class="form-group">
+            <label for="expiry">MM/YY</label>
+            <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+          </div>
+          <div class="form-group">
+            <label for="cvc">CVC</label>
+            <input type="text" id="cvc" name="cvc" required>
+          </div>
+        </div>
+
+        <!-- Total and Place Order Button -->
+        <div class="total-section">
+          <h3>Total:</h3>
+          <p class="total-price">INR XXXXX</p>
+          <button type="submit" class="place-order-btn">Place Order</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Made by Prateek Sharma-2403051051349. All rights reserved.</p>
+  </footer>
+</body>
+</html>

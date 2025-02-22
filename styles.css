@@ -1,0 +1,420 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5; /* Light gray background */
+  color: #333; /* Default text color */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background-color: #fff; /* White background */
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+header .logo {
+  width: 50px; /* Fixed width for logo */
+  height: 50px; /* Fixed height for logo */
+  border-radius: 50%;
+  border: 2px solid #333; /* Dark border for the logo */
+  margin-right: 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.header-center {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  justify-content: center;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #333; /* Dark background */
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.dropbtn:hover {
+  background-color: #555; /* Darker shade on hover */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff; /* White background */
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1; /* Light gray on hover */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Search Bar */
+.search-bar {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 300px;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* Cart Button */
+.header-right .cart-btn {
+  background-color: #333; /* Dark background */
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.header-right .cart-btn:hover {
+  background-color: #555; /* Darker shade on hover */
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+  flex: 1;
+  padding-bottom: 60px;
+}
+
+/* Product Grid */
+.product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.product {
+  background-color: #fff; /* White background */
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  width: 200px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-10px); /* Lift the card more on hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+  max-width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.product:hover img {
+  transform: scale(1.1); /* Slightly zoom the image on hover */
+}
+
+.product h3 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.product p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.product .price {
+  font-weight: bold;
+  color: #333;
+}
+
+.product button {
+  background-color: #333; /* Dark background */
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+  background-color: #555; /* Darker shade on hover */
+}
+
+/* Categories Section */
+.categories {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.categories h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.category-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.category-card {
+  background-color: #fff; /* White background */
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  width: 200px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-10px); /* Lift the card more on hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.category-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.category-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Additional Products in List Format */
+.additional-products {
+  margin: 20px 0;
+  background-color: #fff; /* White background */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.additional-products h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.additional-products ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.additional-products li {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.additional-products li:last-child {
+  border-bottom: none;
+}
+
+.additional-products img {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.additional-products img:hover {
+  transform: scale(1.05); /* Slightly zoom the image on hover */
+}
+
+.additional-products .product-details {
+  flex: 1;
+}
+
+.additional-products h3 {
+  margin: 0;
+  color: #333;
+}
+
+.additional-products p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.additional-products .price {
+  font-weight: bold;
+  color: #333;
+}
+
+.additional-products button {
+  background-color: #333; /* Dark background */
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.additional-products button:hover {
+  background-color: #555; /* Darker shade on hover */
+}
+
+/* Checkout Section */
+.checkout {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff; /* White background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.checkout h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-section {
+  background-color: #f9f9f9; /* Light gray background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h3 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #333; /* Dark border on focus */
+}
+
+.total-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.total-section h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.total-price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.place-order-btn {
+  background-color: #333; /* Dark background */
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.place-order-btn:hover {
+  background-color: #555; /* Darker shade on hover */
+}
+
+/* Footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin-top: auto;
+  backdrop-filter: blur(10px); /* Blur effect for modern look */
+}
